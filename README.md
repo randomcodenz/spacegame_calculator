@@ -24,3 +24,7 @@ Install rails
  - bundle init
  - open the gemfile and add "gem 'rails', '~> 5.1'"
  - run "bundle" to install all the things
+
+# scaffold rails
+Create a new rails app without a test framework (we are going to use rspec)
+ - rails new . --skip-test
