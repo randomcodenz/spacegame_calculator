@@ -28,3 +28,9 @@ Install rails
 # scaffold rails
 Create a new rails app without a test framework (we are going to use rspec)
  - rails new . --skip-test
+
+# add rubocop
+Add rubocop to lint the code
+ - open the gemfile and add "gem 'rubocop', '~> 0.39.0'"
+ - run bundle to install rubocop (and more rails things)
+ - run rubocop and cleanup any offences it finds
