@@ -31,6 +31,18 @@ Create a new rails app without a test framework (we are going to use rspec)
 
 # add rubocop
 Add rubocop to lint the code
- - open the gemfile and add "gem 'rubocop', '~> 0.39.0'"
+ - open the gemfile and add "gem 'rubocop', '~> 0.39.0'" to the development and test group
  - run bundle to install rubocop (and more rails things)
  - run rubocop and cleanup any offences it finds
+ - add .rubocop.yml and customise linting as required
+
+# add and configure rspec and cucumber
+Add rspec and cucumber to the project so we can write tests
+ - open the gemfile and add the following to the development and test group:
+    - gem 'rspec-rails'
+    - gem 'cucumber-rails', require: false
+    - gem 'database_cleaner'
+ - run bundle to install rspec and cucumber
+ - run bundle exec rails generate rspec:install to initialise rspec
+ - run bundle exec rails generate cucumber:install to initialise cucumber
+ - review the generate rspec and cucumber configuration and customise as required

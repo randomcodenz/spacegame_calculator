@@ -1,0 +1,15 @@
+inherit_from: .rubocop_todo.yml
+
+# Turn the rails cops on to start with
+Rails:
+  Enabled: true
+
+Style/IndentationWidth:
+  Exclude:
+    - 'lib/tasks/cucumber.rake'
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Max: 120
