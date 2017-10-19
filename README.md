@@ -46,3 +46,11 @@ Add rspec and cucumber to the project so we can write tests
  - run bundle exec rails generate rspec:install to initialise rspec
  - run bundle exec rails generate cucumber:install to initialise cucumber
  - review the generate rspec and cucumber configuration and customise as required
+
+
+
+
+
+
+# Random Notes
+ - Request objects used to create forms will need to respond to `model_name` (see https://github.com/rails/rails/blob/5.1.3/actionview/lib/action_view/model_naming.rb and https://github.com/rails/rails/blob/5.1.3/actionview/lib/action_view/helpers/form_helper.rb)
